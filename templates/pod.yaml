@@ -31,7 +31,7 @@ spec:
       - containerPort: 4502
       
   - name: alpine2
-    image: kpi-image
+    image: alpine
     ports:
       - containerPort: 4503
       
