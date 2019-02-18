@@ -25,9 +25,19 @@ spec:
     - containerPort: 5432
 
   # Sidecar container
-  - name: kpi-image
-    image: kpi-image
+  - name: alpine1
+    image: alpine
     ports:
       - containerPort: 4502
+      
+  - name: alpine2
+    image: kpi-image
+    ports:
+      - containerPort: 4503
+      
+  - name: alpine3
+    image: alpine
+    ports:
+      - containerPort: 4504    
 
 
