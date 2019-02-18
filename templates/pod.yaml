@@ -25,20 +25,20 @@ spec:
     - containerPort: 5432
 
   # Sidecar container
-  - name: kpi-image
-    image: kpi-image
+  - name: kpi-image-service 
+    image: kpi-image 
     ports:
     - containerPort: 4502
   
     
 
-  - name: kpi-assets
-    image: kpi-assets   
+  - name: asset-image-service  
+    image: asset-image    
     ports:
     - containerPort: 4503  
       
-  - name: kpi-data
-    image: kpi-data
+  - name: data-image-service 
+    image: data-image 
     
     ports:
     - containerPort: 4504 
