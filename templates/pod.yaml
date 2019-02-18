@@ -38,12 +38,7 @@ spec:
       value: "postgres"
     - name: "DBSERVICE"
       value: "EdgeDatabase"  
-    - name: "VCAP_SERVICES"
-      value: "{"postgres":[{"name":"EdgeDatabase","credentials":{"name":"postgres","host":"database-service","port":"5432","username":"postgres","password":"Siemens123"}}]}"
-    - name: "EXTENDED_ERRORS"
-      value: "true"
-    - name: "LOG_DEBUG_INFO"
-      value: "true"
+   
     ports:
     - containerPort: 4502
   
