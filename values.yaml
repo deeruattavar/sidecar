@@ -4,3 +4,6 @@ image:
   pullPolicy: IfNotPresent
 
 restartPolicy: Never
+env:
+  name: VCAP_SERVICES
+  value: {"postgres":[{"name":"EdgeDatabase","credentials":{"name":"postgres","host":"database-service","port":"5432","username":"postgres","password":"Siemens123"}}]}
