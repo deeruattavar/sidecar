@@ -221,7 +221,7 @@ spec:
     
     ports:
     - containerPort: 4201
-        env:
+    env:
     - name: "http_proxy"
       value: 'http://194.138.0.25:9400'
     - name: "https_proxy"
