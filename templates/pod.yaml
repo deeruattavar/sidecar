@@ -10,6 +10,7 @@ spec:
 
   # Main application container
   - name: app-container-postgres
+    imagePullPolicy: IfNotPresent
     image: postgres # alpine is a simple Linux OS image
     env:
     - name: "POSTGRES_DB"
@@ -25,20 +26,22 @@ spec:
     - containerPort: 5432
 
   # Sidecar container
-  - name: kpi-image-service 
-    image: kpi-image 
+  - name: kpi-image-service
+    imagePullPolicy: IfNotPresent
+    image: kpi-image:latest 
     ports:
     - containerPort: 4502
   
-    
 
-  - name: asset-image-service  
-    image: asset-image    
+  - name: asset-image-service
+    imagePullPolicy: IfNotPresent
+    image: asset-image:latest     
     ports:
     - containerPort: 4503  
       
-  - name: data-image-service 
-    image: data-image 
+  - name: data-image-service
+    imagePullPolicy: IfNotPresent
+    image: data-image:latest  
     
     ports:
     - containerPort: 4504 
