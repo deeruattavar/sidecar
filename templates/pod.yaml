@@ -263,7 +263,7 @@ spec:
     - name: {{ .Values.env.name }}
       value: {{ .Values.env.value }}
 
-  - name: publisher_mqtt-service
+  - name: publisher-mqtt-service
     imagePullPolicy: IfNotPresent
     image: demo_publisher_mqtt:latest  
     
