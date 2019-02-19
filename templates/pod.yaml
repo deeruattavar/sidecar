@@ -46,8 +46,8 @@ spec:
       value: "true"
     - name: "LOG_DEBUG_INFO"
       value: "true"
-    - name: "{{ .Values.env.name }}"
-      value: "{{ .Values.env.value }}"
+    - name: ""{{ .Values.env.name }}""
+      value: ""{{ .Values.env.value }}""
 
   - name: asset-service
     imagePullPolicy: IfNotPresent
