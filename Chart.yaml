@@ -1,4 +1,4 @@
-name: alpine
+name: pi-app
 description: Deploy a basic Alpine Linux pod
 version: 0.1.0
 
