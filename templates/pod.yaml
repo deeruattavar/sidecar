@@ -78,7 +78,7 @@ spec:
     
     ports:
     - containerPort: 4505
-        env:
+    env:
     - name: "http_proxy"
       value: 'http://194.138.0.25:9400'
     - name: "https_proxy"
@@ -101,7 +101,7 @@ spec:
     
     ports:
     - containerPort: 4506
-        env:
+    env:
     - name: "http_proxy"
       value: 'http://194.138.0.25:9400'
     - name: "https_proxy"
@@ -125,7 +125,7 @@ spec:
     
     ports:
     - containerPort: 4507
-        env:
+    env:
     - name: "http_proxy"
       value: 'http://194.138.0.25:9400'
     - name: "https_proxy"
@@ -149,7 +149,7 @@ spec:
     
     ports:
     - containerPort: 4508
-        env:
+    env:
     - name: "http_proxy"
       value: 'http://194.138.0.25:9400'
     - name: "https_proxy"
@@ -173,7 +173,7 @@ spec:
     
     ports:
     - containerPort: 4509
-        env:
+    env:
     - name: "http_proxy"
       value: 'http://194.138.0.25:9400'
     - name: "https_proxy"
@@ -245,7 +245,7 @@ spec:
     
     ports:
     - containerPort: 1337
-        env:
+    env:
     - name: "http_proxy"
       value: 'http://194.138.0.25:9400'
     - name: "https_proxy"
@@ -269,7 +269,7 @@ spec:
     
     ports:
     - containerPort: 1883
-        env:
+    env:
     - name: "http_proxy"
       value: 'http://194.138.0.25:9400'
     - name: "https_proxy"
@@ -293,7 +293,7 @@ spec:
     
     ports:
     - containerPort: 3000
-        env:
+    env:
     - name: "http_proxy"
       value: 'http://194.138.0.25:9400'
     - name: "https_proxy"
