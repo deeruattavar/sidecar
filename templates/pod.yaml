@@ -47,7 +47,7 @@ spec:
     - name: "LOG_DEBUG_INFO"
       value: "true"
     - name: "{{ .Values.env.name }}"
-      value: "{{ .Values.env.value }}"
+      value: " {"postgres":[{"name":"EdgeDatabase","credentials":{"name":"postgres","host":"database-service","port":"5432","username":"postgres","password":"Siemens123"}}]}"
 
   - name: asset-service
     imagePullPolicy: IfNotPresent
