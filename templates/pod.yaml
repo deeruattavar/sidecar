@@ -24,13 +24,30 @@ spec:
       mountPath: /var/lib/postgresql
     ports:
     - containerPort: 5432
-
+    
   # Sidecar container
   - name: kpi-image-service
     imagePullPolicy: IfNotPresent
     image: kpi-image:latest 
     ports:
     - containerPort: 4502
+    env:
+    - name: "http_proxy"
+      value: 'http://194.138.0.25:9400'
+    - name: "https_proxy"
+      value: 'http://194.138.0.25:9400'
+    - name: "no_proxy"
+      value: "localhost;127.0.0.1"
+    - name: "DBSERVICETYPE"
+      value: "postgres"
+    - name: "DBSERVICE"
+      value: "EdgeDatabase"  
+    - name: "VCAP_SERVICES"
+      value: "{"postgres":[{"name":"EdgeDatabase","credentials":{"name":"postgres","host":"database-service","port":"5432","username":"postgres","password":"Siemens123"}}]}"
+    - name: "EXTENDED_ERRORS"
+      value: "true"
+    - name: "LOG_DEBUG_INFO"
+      value: "true"
   
 
   - name: asset-image-service
