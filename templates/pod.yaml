@@ -23,7 +23,7 @@ spec:
     - name: database-volume
       mountPath: /var/lib/postgresql
     ports:
-    - containerPort: 5433
+    - containerPort: 5432
     
   # Sidecar container
   - name: kpi-service
