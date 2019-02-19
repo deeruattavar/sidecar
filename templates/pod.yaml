@@ -241,7 +241,7 @@ spec:
 
   - name: dbinit-service
     imagePullPolicy: IfNotPresent
-    image: dbinit-image:latest  
+    image: dbinitapi-image:latest  
     
     ports:
     - containerPort: 1337
